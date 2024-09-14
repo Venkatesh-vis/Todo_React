@@ -37,7 +37,7 @@ const AddTodo = () => {
         onChange={(e) => setNewTodo(e.target.value)}
         sx={{ flexGrow: 1 }}
       />
-      <Button variant="contained" color="primary" onClick={handleAddTodo}>
+      <Button style={{height:'50px'}} variant="contained" color="primary" onClick={handleAddTodo}>
         Add Todo
       </Button>
     </Box>

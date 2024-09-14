@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../public/pexels-nietjuh-796602.jpg);
+  background-repeat: inherit;
+  background-size: contain;
 }
 
 code {

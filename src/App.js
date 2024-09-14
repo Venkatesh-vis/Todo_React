@@ -1,20 +1,15 @@
-import React from 'react';
-import AddTodo from './components/AddTodo';
-import { Provider } from 'react-redux';
-import store from './redux/store';
-import { Container, Typography } from '@mui/material';
-import Todo from './components/todo';
+import React from "react";
+import AddTodo from "./components/AddTodo";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import Todo from "./components/todo";
 
 const App = () => {
   return (
     <Provider store={store}>
-      <Container>
-        <Typography variant="h3" align="center" gutterBottom>
-          Todo List
-        </Typography>
-        <AddTodo />
-        <Todo />
-      </Container>
+      <h1 style={{ textAlign: "center" }}>TODO LIST</h1>
+      <AddTodo />
+      <Todo />
     </Provider>
   );
 };

@@ -44,9 +44,9 @@ const Todo = () => {
   };
 
   return (
-    <List style={{ maxWidth: '500px', margin: '0 auto' }}>
+    <List style={{ maxWidth: '700px', margin: '0 auto' }}>
       {todos.map((todo) => (
-        <ListItem key={todo.id} style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <ListItem key={todo.id} style={{ display: 'flex', justifyContent: 'space-between', marginBottom:'10px', boxShadow:'0.5px 0.5px 5px black', borderRadius:'10px' }}>
           {editMode === todo.id ? (
             <>
               <TextField
