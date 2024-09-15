@@ -71,7 +71,7 @@ const Todo = () => {
                   secondary={todo.completed ? 'Completed' : 'Not Completed'}
                 />
               </div>
-              <div>
+              <div style={{display:'flex'}}>
                 <IconButton onClick={() => handleEdit(todo)}>
                   <EditIcon />
                 </IconButton>

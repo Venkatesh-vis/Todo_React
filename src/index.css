@@ -8,6 +8,7 @@ body {
   background-image: url(../public/pexels-nietjuh-796602.jpg);
   background-repeat: inherit;
   background-size: contain;
+  padding: 5px;
 }
 
 code {

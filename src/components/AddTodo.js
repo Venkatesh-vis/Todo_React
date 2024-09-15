@@ -8,6 +8,10 @@ const AddTodo = () => {
   const dispatch = useDispatch();
 
   const handleAddTodo = () => {
+    if (newTodo.trim() === '') {
+      return; 
+    }
+
     const todo = {
       id: Math.floor(Math.random() * 1000),
       todo: newTodo,
@@ -16,7 +20,7 @@ const AddTodo = () => {
     };
 
     dispatch(addTodo(todo));
-    setNewTodo('');
+    setNewTodo(''); // Clear the input field after adding the todo
   };
 
   return (
