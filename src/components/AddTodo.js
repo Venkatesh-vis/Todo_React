@@ -7,7 +7,8 @@ const AddTodo = () => {
   const [newTodo, setNewTodo] = useState('');
   const dispatch = useDispatch();
 
-  const handleAddTodo = () => {
+  const handleAddTodo = (e) => {
+    e.preventDefault()
     if (newTodo.trim() === '') {
       return; 
     }
@@ -41,7 +42,7 @@ const AddTodo = () => {
         onChange={(e) => setNewTodo(e.target.value)}
         sx={{ flexGrow: 1 }}
       />
-      <Button style={{height:'50px'}} variant="contained" color="primary" onClick={handleAddTodo}>
+      <Button style={{height:'50px'}} variant="contained" color="primary" type='submit' onClick={handleAddTodo}>
         Add Todo
       </Button>
     </Box>
